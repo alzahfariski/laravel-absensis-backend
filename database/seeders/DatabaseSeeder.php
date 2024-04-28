@@ -21,5 +21,17 @@ class DatabaseSeeder extends Seeder
             'email' => 'alzah@admin.com',
             'password' => Hash::make('12345678'),
         ]);
+
+        //data dummy for company
+        \App\Models\Company::create([
+            'name' => 'PT Alfaefsa',
+            'email' => 'alzah@Alfaefsa.com',
+            'address' => 'JL Kayangan, Indonesia',
+            'latitude' => '-3.7893504',
+            'longitude' => '102.3057371',
+            'radius_km' => '0.5',
+            'time_in' => '08:00',
+            'time_out' => '17:00',
+        ]);
     }
 }

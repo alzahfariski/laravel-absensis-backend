@@ -19,9 +19,12 @@
                     ><i class="fas fa-columns"></i> <span>Users</span></a>
 
             </li>
-            <li class="{{ Request::is('blank-page') ? 'active' : '' }}">
-                <a class="nav-link"
-                    href="{{ url('blank-page') }}"><i class="far fa-square"></i> <span>Blank Page</span></a>
+
+            <li class="nav-item">
+                <a href="{{ route('companies.show', 1) }}" class="nav-link">
+                    <i class="fas fa-columns"></i>
+                    <span>Company</span>
+                </a>
             </li>
 
     </aside>
